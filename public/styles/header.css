@@ -1,0 +1,10 @@
+nav-logo {
+  position: fixed;
+  background-color:rgb(26, 225, 175);
+  margin-top: -400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}

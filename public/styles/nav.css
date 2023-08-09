@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+} 
+
+ .write {
+  padding: 0 1.5em;
+  float: right;
+}
+nav {
+   height: 120px;
+  width: 100%; 
+  position: fixed;
+  padding-top:60px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: "Bungee", sans-serif;
+  padding: 0 1.5em; /* 1.5ems of space on the right and left */
+  
+} 
+.write i {
+
+  color: red;
+  display: inline;
+  
+  margin: 15px auto;
+} 
+body {
+  background-image: url("45-degree-fabric-light.png");
+  background-color: #cccccc;
+ }
+    
+
+
+
