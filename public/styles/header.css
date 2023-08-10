@@ -1,3 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  width: 100%;
+  background-image: url("../images/45-degree-fabric-light.png");
+  background-color: orange;
+}
 nav-logo {
   position: fixed;
   background-color:rgb(26, 225, 175);

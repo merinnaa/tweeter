@@ -27,7 +27,21 @@ body {
   .nav-logo {
     font-family: 'Bungee', sans-serif;
   }
-
-/*
+  
+  main h3 {
+    border: 2px solid black;
+  }  
+  /* 
  * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+ */ 
+  main {
+  width: 90%;
+  margin: 0 auto; /*center main container horizontally within parent container */
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+  
+}
