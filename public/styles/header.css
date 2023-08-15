@@ -8,16 +8,16 @@
   background-image: url("../images/45-degree-fabric-light.png");
   background-color: orange;
 }
-.nav-logo {
-  position: fixed;
-  background-color:rgb(26, 225, 175);
-  margin-top: -400px;
-  width: 100%;
+/* .nav-logo {
+  /* position: fixed; */
+  /* background-color:rgb(26, 225, 175); */
+  /* margin-top: -400px; */
+  /* width: 100%;
   display: flex;
   justify-content: center;
   align-items: center
   
-}
+}  */
 .avatar {
   display: flex;
   flex-direction: column;

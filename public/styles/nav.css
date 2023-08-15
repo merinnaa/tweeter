@@ -3,16 +3,25 @@ body {
   padding: 0;
 } 
 
- /* .write-tweet-btn {
+  /* .write-tweet-btn {
   padding: 0 1.5em;
   float: right;
+}  */
+/* nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em; /* 1.5ems of space on the right and left */
+ /* display: flex;
+  align-items: center;
 } */
- nav {
+  nav {
   top: 0;
   left: 0;
    height: 120px;
   width: 100%;  
-  /* display: flex;  */
+  display: flex;  
    position: fixed; 
    padding-top:60px; 
    background-color: #4056A1;
@@ -22,22 +31,51 @@ body {
    align-items: center; 
   padding: 0 1.5em; /* 1.5ems of space on the right and left*/
   
+ }
+ .nav-logo {
+  /* border: 1px solid; */
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.nav-right {
+  float: right; 
+  padding-left: 20px;
+  /* margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  */
 } 
-
+.nav-right i {
+  
+  color: red;
+  justify-content: center;
+  margin-left: 3em;
+  padding: 8px;
+  animation-duration: 2s;
+}  
+/* 
   .write-tweet-btn i {
-
+    display: flex;
+    justify-content: center;
   color: red;
   display: inline;
   
   margin: 15px auto;
-}   
- .write-tweet-btn {
-  float:right ;
+}    */
+
+/* .write-tweet-btn i:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
+  .write-tweet-btn {
+  float: right;
   cursor: pointer;
-  padding: 8px;
+   padding: 8px; 
   border-radius: 20px;
   transition: background-color 0.3s ease;
-} 
+}  
 body {
   background-image: url("45-degree-fabric-light.png");
   background-color: #cccccc;
