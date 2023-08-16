@@ -51,6 +51,30 @@ const renderTweets = function(tweets) {
 // takes return value and appends it to the tweets container
 };
 
+const createTweetElement = function(tweet) {
+  let $tweet = $(`<article class="tweet">
+  <header>
+    <div class="user-info">
+      <img src="${tweet.user.avatars}" alt="User Avatar">
+      <h3 class="username">${tweet.user.name}</h3>
+    </div>
+    <span class="handle">${tweet.user.handle}</span>
+  </header>
+  <div class="tweet-content">
+    <p>${escape(tweet.content.text)}</p>
+  </div>
+  <footer>
+    <span class="timeago">${timeago.format(tweet.created_at)}</span>
+    <div class="icons">
+    <i class="fa-solid fa-flag"></i>
+    <i class="fa-solid fa-retweet"></i>
+    <i class="fa-solid fa-heart"></i>
+    </div>
+  </footer>
+</article>
+`);
 
+  return $tweet;
+};
 
 renderTweets(data);

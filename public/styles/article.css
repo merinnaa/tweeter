@@ -4,10 +4,14 @@ article {
 }
 .tweet-header {
    
-  display: flex;
+  /* display: flex;
   min-width: 100%;
+  justify-content:space-between;
+  outline: none; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
   justify-content: space-between;
-  outline: none;
   
 }
 .tweet-footer {
