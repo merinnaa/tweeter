@@ -10,8 +10,8 @@ textarea {
   margin-bottom: 5px;
   border: none;
   /* Remove the border */
-   outline: none;
-  border-bottom: 4px solid #4d4b4b;
+   /* outline: none; */
+  /* border-bottom: 4px solid #4d4b4b;  */
   /* Add a bottom border to the label */
    background-color: inherit;  
  }  
@@ -23,7 +23,12 @@ textarea {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+  
 } 
+.footer {
+  outline: none;
+  border-top: 4px solid #4d4b4b;
+}
  /* .new-tweet .counter {
   font-size: 18px;
   color: #4d4b4b;
@@ -50,4 +55,28 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 } */
+article {
+  border: 2px solid;
+}
+.tweet-header {
+   
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  outline: none;
+  /* border-bottom: 4px solid #4d4b4b; */
+}
+.tweet-footer {
+    
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  border-top: 4px solid #4d4b4b;
+}
+  .tweet-icons :hover {
+    cursor: pointer;
+  background-color: #3A4E96;
+}
+
