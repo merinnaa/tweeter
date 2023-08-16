@@ -1,0 +1,23 @@
+article {
+  padding: 10px;
+  border: 2px solid;
+}
+.tweet-header {
+   
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  outline: none;
+  
+}
+.tweet-footer {
+    
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  border-top: 4px solid #4d4b4b;
+}
+  .tweet-icons :hover {
+    cursor: pointer;
+  color: #68d514;
+}

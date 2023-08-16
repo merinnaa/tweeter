@@ -9,10 +9,7 @@ textarea {
    padding: 0;
   margin-bottom: 5px;
   border: none;
-  /* Remove the border */
-   /* outline: none; */
-  /* border-bottom: 4px solid #4d4b4b;  */
-  /* Add a bottom border to the label */
+  
    background-color: inherit;  
  }  
  .new-tweet button {
@@ -29,54 +26,9 @@ textarea {
   outline: none;
   border-top: 4px solid #4d4b4b;
 }
- /* .new-tweet .counter {
-  font-size: 18px;
-  color: #4d4b4b;
-  font-family: "Bungee", sans-serif;  
- } */
-/* #error-container {
-  display: none;
-  width: 100%;
-  padding: 10px;
-  color: #ff0000;
-  border-radius: 5px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  border: 4px solid #ff0000;
-
  
-} */
 .invalid {
   color: red;
 } 
-/* .new-tweet {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-} */
-article {
-  border: 2px solid;
-}
-.tweet-header {
-   
-  display: flex;
-  min-width: 100%;
-  justify-content: space-between;
-  outline: none;
-  /* border-bottom: 4px solid #4d4b4b; */
-}
-.tweet-footer {
-    
-  display: flex;
-  min-width: 100%;
-  justify-content: space-between;
-  border-top: 4px solid #4d4b4b;
-}
-  .tweet-icons :hover {
-    cursor: pointer;
-  color: #68d514;
-}
 
