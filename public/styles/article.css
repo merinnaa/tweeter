@@ -11,7 +11,7 @@ article {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   
 }
 .tweet-footer {
@@ -20,6 +20,9 @@ article {
   min-width: 100%;
   justify-content: space-between;
   border-top: 4px solid #4d4b4b;
+}
+.tweet-username{
+  float:right;
 }
   .tweet-icons :hover {
     cursor: pointer;

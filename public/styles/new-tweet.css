@@ -12,6 +12,9 @@ textarea {
   
    background-color: inherit;  
  }  
+ textarea:invalid {
+  border: 2px dashed red;
+}
  .new-tweet button {
   background-color: #0e3885;
   font-family: "Bungee", sans-serif;
