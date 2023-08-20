@@ -3,25 +3,6 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-// const tweetData = {
-//   "user": {
-//     "name": "Newton",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//     "handle": "@SirIsaac"
-//   },
-//   "content": {
-//     "text": "If I have seen further it is by standing on the shoulders of giants"
-//   },
-//   "created_at": 1461116232227
-// };
-
-//const { text } = require("body-parser");
-
-// const $tweet = createTweetElement(tweetData);
-
-// // Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 $(document).ready(function () {
 
@@ -52,18 +33,14 @@ $(document).ready(function () {
   ];
 
   const renderTweets = function (tweets) {
+
     // loops through tweets
     let container = $('#tweets-container').empty();
-    // const $tweetArticle = $("<article>").addClass("tweet-container");
-    // const $tweetContent = $("<p>").addClass("tweet-content").text(tweets.content);
-    // $tweetArticle.append($tweetContent);
+
     tweets.forEach((tweet) => {
 
       // calls createTweetElement for each tweet
       const $tweetElement = createTweetElement(tweet);
-      // const tweetTime = (tweet.created_at).fromNow();
-      // const $timestamp = $tweetElement.find('.timeago');
-      // $timestamp.text(timeago.format(tweets.created_at));
 
       // takes return value and appends it to the tweets container
       container.prepend($tweetElement);
@@ -72,9 +49,6 @@ $(document).ready(function () {
   };
 
   const createTweetElement = function (tweet) {
-
-  
-    
     let $tweet = `<article class="tweet-container">
   <header class="tweet-header">
     <div class="user-info">
@@ -109,17 +83,17 @@ $(document).ready(function () {
 
     // Hide the error message before validation
     $errorMessage.hide();
+
     // Perform validation checks
     if (!tweetContent || tweetContent.trim() === "") {
       // Display an error message if tweet content is empty
-      // alert("Tweet content cannot be empty.");
       $errorMessage.text("Tweet content cannot be empty.").slideDown();
       return; // Stop further execution
     }
 
     if (tweetContent.length > 140) {
       // Display an error message if tweet content exceeds the character limit
-      //alert("Tweet content is too long. Maximum 140 characters allowed.");
+      
       $errorMessage.text("Tweet content is too long. Maximum 140 characters allowed.").slideDown();
 
       return; // Stop further execution
@@ -140,8 +114,7 @@ $(document).ready(function () {
   const loadTweets = function () {
     $.get('/tweets')
       .then((response) => {
-        //$('tweetContent').empty();
-        //$tweetContent.val('');
+        
         // Call renderTweets with the received JSON response
         renderTweets(response);
         $('#tweets-container').prepend(createTweetElement(response[response.length - 1]));
