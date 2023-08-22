@@ -7,6 +7,7 @@ article {
    display: flex;
   align-items: center;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 .tweet-footer {
     
@@ -15,6 +16,10 @@ article {
   justify-content: space-between;
   border-top: 4px solid #4d4b4b;
 }
+.tweet-header img h3{
+  display: flex;
+  justify-content:space-around ;
+}
 .tweet-username{
   float:right;
 }
@@ -22,4 +27,21 @@ article {
     cursor: pointer;
   color: #68d514;
 }
+.tweet-avator-box {
+  display: flex;
+  align-items: center;
+}
+.tweet-avator {
+  
+  height: 50px; ;
+}
+.handle {
+  opacity: 0.4;
+  color: #4056A1;
+  font-weight: bolder;
+}
+.timeago {
+  font-size: small;
+}
+
 
