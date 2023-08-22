@@ -70,7 +70,6 @@ $(document).ready(function () {
 
       return; // Stop further execution
     }
-    //const dataForm = $(this).serialize();
     
     $.ajax({
       method: 'POST',
