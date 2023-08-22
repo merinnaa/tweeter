@@ -37,8 +37,10 @@ body {
   justify-content: center;
   margin-left: 3em;
   padding: 8px;
+  animation: i;
   animation-duration: 2s;
 }  
+
 
   .write-tweet-btn {
   float: right;

@@ -5,8 +5,13 @@ Tweeter is a simple, single-page Twitter clone.
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
 ## screenshots
+## desktop responsive view
 ![screenshot of tweet](https://github.com/merinnaa/tweeter/blob/master/public/images/tweet.png?raw=true)
+
+## displaying error on submitting empty tweet
 ![screenshot of empty tweet](https://github.com/merinnaa/tweeter/blob/master/public/images/empty-tweet.png?raw=true)
+
+## displaying error on submitting more that 140 words
 ![screenshot of over limit tweet](https://github.com/merinnaa/tweeter/blob/master/public/images/err-msg.png?raw=true)
 
 ## Getting Started
