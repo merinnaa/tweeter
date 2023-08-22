@@ -1,6 +1,7 @@
 article {
   padding: 10px;
   border: 2px solid;
+  margin-bottom: 1em;
 }
 
 .tweet-header {
@@ -42,6 +43,9 @@ article {
 }
 .timeago {
   font-size: small;
+}
+.tweet-container:hover {
+  box-shadow: 5px 5px 5px rgb(22, 147, 39);
 }
 
 

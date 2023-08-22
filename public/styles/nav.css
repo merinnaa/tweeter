@@ -19,11 +19,11 @@ body {
   padding: 0 1.5em; /* 1.5ems of space on the right and left*/
   
  }
- .nav-logo {
 
-  display: flex;
-  min-width: 100%;
-  justify-content: space-between;
+ .nav-logo {
+ 
+    font-family: 'Bungee', sans-serif;
+  
 }
 
 .nav-right {

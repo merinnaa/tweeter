@@ -20,6 +20,11 @@ $(document).ready(function () {
 
 
   const createTweetElement = function (tweet) {
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
     console.log("text");
     let $tweet = `<article class="tweet-container">
   <header class="tweet-header">
@@ -31,7 +36,7 @@ $(document).ready(function () {
   </header>
   <div class="tweet-content">
   <!-- Apply XSS-escaped content to the <p> element -->
-   <p>${tweet.content.text}</p>
+   <p>${escape(tweet.content.text)}</p>
   </div>
   <footer class="tweet-footer">
   <span class="timeago">${timeago.format(tweet.created_at)}</span>
@@ -76,6 +81,9 @@ $(document).ready(function () {
       url: '/tweets',
       data: $(this).serialize(),
     }).then(loadTweets);
+    $(this)[0].reset();
+    // Reset the character counter
+    $(this).find(".counter").text("140");
   });
 
   const loadTweets = function () {
